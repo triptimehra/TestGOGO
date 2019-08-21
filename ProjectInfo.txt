@@ -1,0 +1,34 @@
+TestCase 1: 
+Language of choice: Java
+Test framework : testNG 
+Model Type: Page Object Model
+Integration tool: Maven
+Framework: We are using TestNG with POM model to separate pages with test case.
+Due to Elements dynamic nature, it is best as all elements are defined page wise. So finding any element is easy.
+Due to sepratin of TC with elements, we can perform any no of test item on any locator without much change.
+It provides scalability in test
+Class Info:
+TestBase: base class for project. Innitialtes propertiess file & webdriver
+HomePage: Class containing elements and their functions for homepage
+BookPage: Class containing elements and their functions for page loaded after search
+config.properties: Basic configuration data, which user can change anytime without affecting rest of program
+Util: Contains basic util File
+ TC1SearchBookTest: contains TC for first testCase
+ 
+ TestCase 2
+Language of choice: Java
+Test framework : testNG with RestAssured API & BDD
+Integration tool: Maven
+Framework: We are using testNG with RestAssured API & BDD
+RestAssured APi with BDD provides structure to requests and help to compartemize the code.
+Class Info:
+TestBase: base class for project. Innitialtes propertiess file & webdriver
+Newuser: To pass information to post request
+config.properties: Basic configuration data, which user can change anytime without affecting rest of program
+Util: Contains basic util File
+ TC2APITest: contains TC for second testCase
+ 
+ How to Run test:
+ 1. Clone files from GitHub
+ 2. Add to Eclipse
+ 3. Run by Pom.xnl & testng suite
